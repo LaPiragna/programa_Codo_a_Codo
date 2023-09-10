@@ -2,4 +2,4 @@
 
 Programa "Codo a Codo". Buenos Aires, Argentina.-
 
-Trabajo realizado en el programa utilizando HTML y CSS.-
+Todos los proyectos realizados en el mismo.
