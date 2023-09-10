@@ -1,4 +1,3 @@
 # codo_a_codo
 Programa "Codo a Codo".
-
-Los diferentes proyectos que se realizaron durante la cursada del programa.💪🎅🤳
+Trabajo realizado en el programa utilizando HTML y CSS.
