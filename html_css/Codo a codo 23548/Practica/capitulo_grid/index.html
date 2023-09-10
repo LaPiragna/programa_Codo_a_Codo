@@ -4,38 +4,40 @@
 		<meta charset="utf-8">
 		<title></title>
 		<link rel="stylesheet" href="index.css">
-	</head>
+		
+		<!-- menu icon -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<!-- github icon -->
+		<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+		<!-- instagram icon -->
+		<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+		<!-- linkedin icon -->
+	</head><script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 	<body>
 		<main>
-			<!-- <h1>Flexbox</h1> -->
-			<!-- <div id="container_flex"> -->
-				<!-- <div class="item">1</div> -->
-				<!-- <div class="item">2</div> -->
-				<!-- <div class="item">3</div> -->
-				<!-- <div class="item">4</div> -->
-				<!-- <div class="item">5</div> -->
-				<!-- <div class="item">6</div> -->
-				<!-- <div class="item">7</div> -->
-				<!-- <div class="item">8</div> -->
-				<!-- <div class="item">9</div> -->
-				<!-- <div class="item">10</div> -->
-				<!-- <div class="item">11</div> -->
-				<!-- <div class="item">12</div> -->
-				<!-- <div class="item">13</div> -->
-				<!-- <div class="item">14</div> -->
-				<!-- <div class="item">15</div> -->
-				<!-- <div class="item">16</div> -->
-				<!-- <div class="item">17</div> -->
-				<!-- <div class="item">18</div> -->
-				<!-- <div class="item">19</div> -->
-				<!-- <div class="item">20</div> -->
-			<!-- </div>	 -->
-			<div id="container_grid">
-				<div id="item-1">Cabecera</div>
-				<div id="item-2">Menu de navegacion</div>
-				<div id="item-3">Cuerpo</div>
-				<div id="item-4">Publicidad</div>
-				<div id="item-5">Pie de hoja</div>
+			<div id="grid_container">
+				<div id="header" class="grid_item">
+					<img src="https://www.stickers-factory.com/media/catalog/product/cache/1/image/1000x/040ec09b1e35df139433887a97daa66f/0/8/08761_00.png" alt="logo img" id="header_logo">
+					<ul id="header_nav">
+								<li class="header_nav_i"><a><iconify-icon icon="openmoji:github"></iconify-icon><span>GitHub</span></a></li>
+								<li class="header_nav_i"><a><iconify-icon icon="mdi:instagram"></iconify-icon><span>Instagram</span></a></li>
+								<li class="header_nav_i"><a><iconify-icon icon="mdi:linkedin"></iconify-icon><span>LinkedIn</span></a></li>
+					</ul>
+					<div id="dropdown_menu">
+						<span class="material-symbols-outlined">menu</span>
+						<div id="dropdown_content">
+							<ul id="dropdown_list">
+								<li><a><iconify-icon icon="openmoji:github"></iconify-icon>GitHub</a></li>
+								<li><a><iconify-icon icon="mdi:instagram"></iconify-icon>Instagram</a></li>
+								<li><a><iconify-icon icon="mdi:linkedin"></iconify-icon>LinkedIn</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="body"></div>
+				<div id="adds"></div>
+				<div id="footer"></div>
+				</div>
 			</div>
 		</main>
 	</body>
