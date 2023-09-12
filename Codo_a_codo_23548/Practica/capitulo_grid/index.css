@@ -9,6 +9,7 @@
 
 :root{
 	--black:rgb(35,31,32);
+	--white:rgb(250,250,250);
 	--gray:rgb(135,131,132);
 	--lightblue:rgb(0,174,239);
 	
@@ -23,11 +24,11 @@
 	margin:0;
 	padding:0;
 	box-sizing:border-box;
+	font-family:sans-serif;
+	font-weight:700;
 }
 
-body{
-	position:relative;
-	overflow:scroll;
+body{	
 }
 
 #grid_container{
@@ -37,12 +38,10 @@ body{
 						'footer';
 	grid-template-rows:100px auto 15%;
 	grid-template-columns:100%;
-	border:1px solid black;
 }
 #header {
-	position:relative;
-	z-index:1;
     grid-area: header;
+	
     display: grid;
     grid-gap: 0 2%;
     grid-template-columns: 20% auto;
@@ -50,13 +49,15 @@ body{
     align-content: center;
     align-items: baseline;
 	
-    background-color: var(--black);
-    color: white;
-	
-	width:100vw;
-	max-height: 100px;
+	width:100%;
+	max-height: 110px;
 	position:fixed;
 	top:0;
+	z-index:1;
+	
+	color:var(--white);
+    background-color: var(--black);
+	border-bottom:1px solid var(--lightblue);
 }
 #header_logo{
 	height:100%;
@@ -135,7 +136,7 @@ iconify-icon{
 }
 
 #dropdown_list li a:active{
-	border:1px solid white;
+	border:1px solid var(--white);
 	background-color:var(--black);
 	width:100%;
 }
@@ -150,21 +151,12 @@ iconify-icon{
 	grid-area:body;
 	display:grid;
 	grid-template-areas:'main adds';
-	grid-template-columns:75% auto;
-	grid-template-rows:100%;
-}
-
-#body picture img {
-	position:absolute;
-	z-index:-10;
-	height:auto;
-	width:100%;
+	grid-template-columns:85% auto;
 }
 
 #main{
 	position:relative;
 	grid-area:main;
-	color:white;
 }
 
 #main:before {
@@ -185,6 +177,7 @@ iconify-icon{
 #main_content {
   position: relative;
   padding:1% 5%;
+  color:var(--white);
 }
 
 .text_container{
@@ -203,20 +196,38 @@ iconify-icon{
 	font-size:var(--p);
 }
 
-
 #adds{
 	grid-area:adds;
 	display:grid;
-	align-items:stretch;
-	background-image:url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e5ae09b0-a69f-4795-a0e8-6cb6a65ebd31/d98fi5q-224d5de9-0672-41df-a5cc-247d33d87484.jpg/v1/fit/w_828,h_1270,q_70,strp/2_underwater_hd_2k_vertical_image_by_mattiamc_d98fi5q-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTU3MSIsInBhdGgiOiJcL2ZcL2U1YWUwOWIwLWE2OWYtNDc5NS1hMGU4LTZjYjZhNjVlYmQzMVwvZDk4Zmk1cS0yMjRkNWRlOS0wNjcyLTQxZGYtYTVjYy0yNDdkMzNkODc0ODQuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Nn07sM-lzG16fPq98_19-b7x9fcmEAEmaZRawcbPBEQ");
+	background-color: #0000ff63;
+	border-left:1px solid var(--lightblue);
+}
+
+#adds_content{
+	color:white;
+	height:100%;
+	width:100%;
+	display:grid;
+	
+	background-image:url("https://images.unsplash.com/photo-1556704503-4e4c76896741?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80");
 	background-repeat:no-repeat;
-	background-position:50% 0;
-	background-attachment:fixed;
+	background-position:50% 100%;
+	background-size:cover;
+	z-index:-10;
+}
+
+#adds_content p{
+	font-size:var(--p);
 }
 
 #footer{
 	grid-area:footer;
-	border:1px solid cyan;
+	
+	max-height:110px;
+	width:100%;
+	
+	background-color:var(--black);
+	border-top:1px  solid var(--lightblue);
 }
 
 @media screen and (max-width:485px){
@@ -232,6 +243,5 @@ iconify-icon{
 	}
 	#body{
 		grid-template-rows:auto 100px;
-		grid-template-columns:100%;
 	}
 }
