@@ -40,8 +40,9 @@ body{
 	border:1px solid black;
 }
 #header {
+	position:relative;
+	z-index:1;
     grid-area: header;
-	
     display: grid;
     grid-gap: 0 2%;
     grid-template-columns: 20% auto;
@@ -147,42 +148,70 @@ iconify-icon{
 
 #body{
 	grid-area:body;
-	border:1px solid red;
 	display:grid;
 	grid-template-areas:'main adds';
 	grid-template-columns:75% auto;
 	grid-template-rows:100%;
 }
 
-#main{
-	grid-area:main;
-	border:1px solid blue;
-	padding:1% 5%;
+#body picture img {
+	position:absolute;
+	z-index:-10;
+	height:auto;
+	width:100%;
 }
 
-#main h2{
+#main{
+	position:relative;
+	grid-area:main;
+	color:white;
+}
+
+#main:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://assets.digitalocean.com/labs/images/community_bg.png');
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: cover;
+  z-index:-10;
+}
+
+#main_content {
+  position: relative;
+  padding:1% 5%;
+}
+
+.text_container{
+	margin:5% 0;
+}
+
+.text_container p{
+	margin-top:5%;
+}
+
+#main_content h2{
 	font-size:var(--subtitle);;
 }
 
-#main p{
-	font-size:var(--p);;
+#main_content p{
+	font-size:var(--p);
 }
+
 
 #adds{
 	grid-area:adds;
 	display:grid;
 	align-items:stretch;
-}
-
-#adds picture {
-	height:100%;
-	display:grid;
-	align-items:stretch;
-}
-
-#adds picture img{
-	width:100%;
-	height:auto;
+	background-image:url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e5ae09b0-a69f-4795-a0e8-6cb6a65ebd31/d98fi5q-224d5de9-0672-41df-a5cc-247d33d87484.jpg/v1/fit/w_828,h_1270,q_70,strp/2_underwater_hd_2k_vertical_image_by_mattiamc_d98fi5q-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTU3MSIsInBhdGgiOiJcL2ZcL2U1YWUwOWIwLWE2OWYtNDc5NS1hMGU4LTZjYjZhNjVlYmQzMVwvZDk4Zmk1cS0yMjRkNWRlOS0wNjcyLTQxZGYtYTVjYy0yNDdkMzNkODc0ODQuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Nn07sM-lzG16fPq98_19-b7x9fcmEAEmaZRawcbPBEQ");
+	background-repeat:no-repeat;
+	background-position:50% 0;
+	background-attachment:fixed;
 }
 
 #footer{
