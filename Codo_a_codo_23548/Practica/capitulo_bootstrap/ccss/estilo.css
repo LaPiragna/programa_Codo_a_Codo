@@ -1,5 +1,6 @@
 *::selection{
 	border:1px solid blue;
-	background-color:rgb(120,120,120);
+	background-color:rgb(50,50,50);
 	border-radius:10px;
+	color:white;
 }
