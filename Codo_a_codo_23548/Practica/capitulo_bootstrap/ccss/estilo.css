@@ -1,6 +1,6 @@
-*::selection{
-	border:1px solid blue;
-	background-color:rgb(50,50,50);
-	border-radius:10px;
-	color:white;
+main{
+	background-image: url('../img/codoacodo.png');
+	height:100vh;
+	background-color:red !important;
+	z-index:4;
 }
