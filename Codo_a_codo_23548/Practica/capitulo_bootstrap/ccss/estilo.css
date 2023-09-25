@@ -1,6 +1,14 @@
-main{
-	background-image: url('../img/codoacodo.png');
-	height:100vh;
-	background-color:red !important;
-	z-index:4;
+main .seccion1{
+	background-image: url(../../img/ba1.jpg);
+	background-position:center;
+	background-size:cover;
+}
+.filter{
+	filter: brightness(.7);
+}
+
+img.orador_img {
+	width:100%;
+	padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
 }
