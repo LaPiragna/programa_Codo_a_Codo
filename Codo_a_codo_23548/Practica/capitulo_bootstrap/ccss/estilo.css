@@ -7,15 +7,19 @@ main .seccion1{
 	filter: brightness(.7);
 }
 
-.seccion2{
-	max-width:320px;
+div.orador_info{
+	max-width:300px;
+	border-radius:10px;
+	padding:0!important;
+	margin:0 10px;
 }
 
 img.orador_img {
 	width:100%;
-	max-width:320px;
-	max-height: 372px;
+	height:280px;
+	padding:0 !important;
 	padding-right: calc(var(--bs-gutter-x) * .5);
     padding-left: calc(var(--bs-gutter-x) * .5);
-	margin:auto;
+	margin:0!important;
+	border-radius:10px;
 }
