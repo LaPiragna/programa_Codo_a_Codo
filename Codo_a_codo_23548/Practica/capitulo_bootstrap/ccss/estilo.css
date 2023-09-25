@@ -7,8 +7,15 @@ main .seccion1{
 	filter: brightness(.7);
 }
 
+.seccion2{
+	max-width:320px;
+}
+
 img.orador_img {
 	width:100%;
+	max-width:320px;
+	max-height: 372px;
 	padding-right: calc(var(--bs-gutter-x) * .5);
     padding-left: calc(var(--bs-gutter-x) * .5);
+	margin:auto;
 }
