@@ -23,3 +23,19 @@ img.orador_img {
 	margin:0!important;
 	border-radius:10px;
 }
+
+u{
+	text-decoration:underline;
+}
+
+.submit_btn {
+	background-color: rgb(151,201,61)!important;
+}
+
+.footer{
+	background-color:rgb(31,82,113);
+}
+
+.footer_a{
+	text-decoration:none;
+}
