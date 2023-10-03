@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>responsive design</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="estilo.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+	</head>
+	<body>
+		<header id="header">
+			<img id="logocodo" src="https://inscripcionesagencia.bue.edu.ar/codoacodo/img/graficos/logoCACsinbloque.png">
+			<h2>Conf Bs As</h2>
+			<ul id="menu">
+				<li>
+				<iconify-icon icon="uil:bars" class="icon"></iconify-icon>
+				<ul>
+				  <li><a href="#">La conferencia</a></li>
+				  <li><a href="#">Los oradores</a></li>
+				  <li><a href="#">El lugar y la fecha</a></li>
+				  <li><a id ="nav_compra_tickets" href="#">Comprar tickets</a></li>
+				</ul>
+				</li>
+			</ul>
+		</header>
+		<main>
+			<section id="section1">
+				<div class="section_container">
+					<h1 id="section1_h1">Conferencia Buenos Aires</h1>
+					<p>Buenos Aires llega por primera vez a Argentina. Un evento
+					para compartir con nuestra comunidad el conocimiento y la 
+					experiencia de los expertos que están creando el futuro de 
+					internet. Ven a conocer a miembros del evento, a otros 
+					estudiantes de Codo a Codo y los oradores de primer nivel que
+					tenemos para tí. Te esperamos!</p>
+					<a id="quiero_ser_orador">Quiero ser orador</a>
+					<a id="comprar_tickets">Comprar tickets</a>
+				</div>
+			</section>
+			<div class="separador"></div>
+			<section id="section2">
+				<h1 class="section2_title section2_title1">CONOCE A LOS</h1>
+				<h1 class="section2_title section2_title2">ORADORES</h1>
+				<div id="oradores_container">
+					<div class="orador_container" id="orador1">
+						<picture>
+							<source media="" srcset="">
+							<img class="orador_img" id="orador1_img" src="img/steve.jpg">
+						</picture>
+						<div class="orador_info_container" id="orado/r1_info_container">
+							<div class="tag_container" id="orador1_tag1_container">
+								<a class="tag">JavaScript</a>
+							</div>
+							<div class="tag_container" id="orador1_tag2_container">
+								<a class="tag">React</a>
+							</div>
+							<h2 class="orador_nombre" id="orador1_nombre">Steve Jobs</h2>
+							<p class="orador_description" id="orador1_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis. Nunc eget lorem dolor sed viverra ipsum.</p>
+						</div>
+					</div>
+					<div class="orador_container" id="orador2">
+						<picture id="orador2_img">
+							<source media="" srcset="">
+							<img class="orador_img" src="img/bill.jpg" alt="Bill Gates">
+						</picture>
+						<div class="orador_info_container" id="orador2_info_container">
+							<div class="tag_container" id="orador2_tag1_container">
+								<a class="tag">JavaScript</a>
+							</div>
+							<div class="tag_container" id="orador2_tag2_container">
+								<a class="tag">React</a>
+							</div>
+							<h2 class="orador_nombre" id="orador2_nombre">Bill Gates</h2>
+							<p class="orador_description" id="orador2_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis. Nunc eget lorem dolor sed viverra ipsum.</p>
+						</div>
+					</div>
+					<div class="orador_container" id="orador3">
+						<picture id="orador3_img">
+							<source media="" srcset="">
+							<img class="orador_img" src="img/ada.jpeg" alt="Ada Lovelace">
+						</picture>
+						<div class="orador_info_container" id="orador3_info_container">
+							<div class="tag_container" id="orador3_tag3_container">
+								<a class="tag">Negocios</a>
+							</div>
+							<div class="tag_container" id="orador3_tag3_container">
+								<a class="tag">Startups</a>
+							</div>
+							<h2 class="orador_nombre" id="orador3_nombre">Ada Lovelace</h2>
+							<p class="orador_description" id="orador3_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis. Nunc eget lorem dolor sed viverra ipsum.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="separador"></div>
+			<section id="section3">
+				<div id="section3_img_container">
+					<picture>
+						<source media="" srcset="">
+						<img id="section3_img" src="img/honolulu.jpg" alt="Honolulu">
+					</picture>
+				</div>
+				<div id="section3_description_container">
+					<h2>Bs As - Octubre</h2>
+					<p>Buenos Aires es la provincia y la localidad más grande
+					del estado de Argentina. En los Estados Unidos, Honolulu es
+					la más sureña de entre las principales ciudades estadounidenses. 
+					Aunque el nombre Honolulu se refiere al área urbana en la costa 
+					sureste de la isla de Oahu, la ciudad y el condado de Honolulu han
+					formado una ciudad-condado consolidada que cubre toda la ciudad 
+					(aproximadamente 600 kilometros cuadrados de superficie).</p>
+				<a>Conocé más</a>
+				</div>
+			</section>
+			<div class="separador"></div>
+			<section id="section4">
+				<h1 class="section4_title1">CONVIÉRTETE EN UN</h1>
+				<h1 class="section4_title2">ORADOR</h1>
+				<p>Anótate como orador para dar una <a>charla ignite</a>.
+				Cuéntanos de qué quieres hablar!</p>
+				<form>
+					<input type="name" placeholder="Nombre" id="nombre">
+					<input type="name" placeholder="Apellido" id="apellido">
+					<textarea rows="4" cols="50" placeholder="Sobre qué quieres hablar?" id="tematica"></textarea>
+					<p>Recuerda incluir un título para tu charla</p>
+					<input type="submit" value="Enviar" id="enviar">
+				</form>
+			</section>
+			<div class="separador"></div>
+		</main>
+		<footer>
+			<a class="footer_anchor">Preguntas frecuentes</a>
+			<a class="footer_anchor">Contáctanos</a>
+			<a class="footer_anchor">Prensa</a>
+			<a class="footer_anchor">Conferencias</a>
+			<a class="footer_anchor">Términos y condiciones</a>
+			<a class="footer_anchor">Privacidad</a>
+			<a class="footer_anchor">Estudiantes</a>
+		</footer>
+	</body>
+</html>

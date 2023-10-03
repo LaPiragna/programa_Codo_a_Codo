@@ -1,0 +1,41 @@
+main .seccion1{
+	background-image: url(../../img/ba1.jpg);
+	background-position:center;
+	background-size:cover;
+}
+.filter{
+	filter: brightness(.7);
+}
+
+div.orador_info{
+	max-width:300px;
+	border-radius:10px;
+	padding:0!important;
+	margin:0 10px;
+}
+
+img.orador_img {
+	width:100%;
+	height:280px;
+	padding:0 !important;
+	padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+	margin:0!important;
+	border-radius:10px;
+}
+
+u{
+	text-decoration:underline;
+}
+
+.submit_btn {
+	background-color: rgb(151,201,61)!important;
+}
+
+.footer{
+	background-color:rgb(31,82,113);
+}
+
+.footer_a{
+	text-decoration:none;
+}

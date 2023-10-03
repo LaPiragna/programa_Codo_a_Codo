@@ -1,0 +1,259 @@
+/*menu icon*/
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+:root{
+	--black:rgb(35,31,32);
+	--white:rgb(250,250,250);
+	--gray:rgb(135,131,132);
+	--lightblue:rgb(0,174,239);
+	
+	font-size:11px;
+	--title:2.8rem;
+	--subtitle:2.2rem;
+	--btn:2rem;
+	--p:1.8rem;
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:sans-serif;
+	font-weight:700;
+}
+
+body{	
+}
+
+#grid_container{
+	display:grid;
+	grid-template-areas:'header'
+						'body'
+						'footer';
+	grid-template-rows:100px auto 15%;
+	grid-template-columns:100%;
+}
+#header {
+    grid-area: header;
+	
+    display: grid;
+    grid-gap: 0 2%;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 100%;
+	
+	width:100%;
+	max-height: 110px;
+	position:fixed;
+	top:0;
+	z-index:1;
+	
+	color:var(--white);
+    background-color: var(--black);
+	border-bottom:1px solid var(--lightblue);
+}
+#header_logo{
+	height:100%;
+	margin:auto;
+}
+
+#header_nav {
+	display:grid;
+	grid-template-columns:auto auto auto;
+	grid-template-rows:auto;
+	list-style:none;
+	margin:auto 0;
+}
+
+a{
+	font-size:var(--btn);
+}
+
+.header_nav_i a{
+	display:grid;
+	grid-template-columns:auto auto;
+	justify-content:center;
+	align-content:center;
+	align-items:center;
+	grid-gap:1%;
+}
+
+.header_nav_i a:active{
+	color:var(--lightblue);
+}
+
+iconify-icon{
+	font-size:2rem;
+}
+
+#dropdown_menu{
+	margin:auto;
+	display:none;
+}
+
+#dropdown_content {
+    position: absolute;
+    z-index: 1;
+    right: 2%;
+    top: 4%;
+	min-width: 150px;
+	background-color:var(--black);
+	display:none;
+}
+
+#dropdown_list {
+    list-style: none;
+    display: grid;
+    grid-gap: 5%;
+    align-content: center;
+    align-items: center;
+    justify-items: start;
+}
+
+#dropdown_list li {
+    border-radius: 10px;
+    background-color: var(--gray);
+    width: 100%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 1px solid var(--black);
+}
+
+#dropdown_list li a {
+	display:grid;
+	align-items:center;
+	grid-template-columns:25% auto;
+	background-color:var(--lightblue);
+	border:1px solid var(--black);
+	border-radius:10px;
+	width:90%;
+}
+
+#dropdown_list li a:active{
+	border:1px solid var(--white);
+	background-color:var(--black);
+	width:100%;
+}
+
+#dropdown_menu:hover{
+	& #dropdown_content{
+		display:grid;
+	}
+}
+
+#body{
+	grid-area:body;
+	display:grid;
+	grid-template-areas:'main adds';
+	grid-template-columns:85% auto;
+	align-items:strecth;
+}
+
+#main{
+	position:relative;
+	grid-area:main;
+}
+
+#main:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://assets.digitalocean.com/labs/images/community_bg.png');
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: cover;
+  z-index:-10;
+}
+
+#main_content {
+  position: relative;
+  padding:1% 5%;
+  color:var(--white);
+}
+
+.text_container{
+	margin:5% 0;
+}
+
+.text_container p{
+	margin-top:5%;
+}
+
+#main_content h2{
+	font-size:var(--subtitle);;
+}
+
+#main_content p{
+	font-size:var(--p);
+}
+
+#adds{
+	grid-area:adds;
+	display:grid;
+	background-color: #0000ff63;
+	border-left:1px solid var(--lightblue);
+}
+
+#adds_content{
+	color:white;
+	height:100%;
+	width:100%;
+	display:grid;
+	
+	background-image:url("https://images.unsplash.com/photo-1556704503-4e4c76896741?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80");
+	background-repeat:no-repeat;
+	background-position:50% 100%;
+	background-size:cover;
+	z-index:-10;
+}
+
+#adds_content p{
+	font-size:var(--p);
+}
+
+#footer{
+	grid-area:footer;
+	
+	max-height:110px;
+	width:100%;
+	
+	background-color:var(--black);
+	border-top:1px  solid var(--lightblue);
+}
+
+@media screen and (max-width:840px){
+	#body{
+		grid-template-areas:'main'
+							'adds';
+		grid-template-columns:100%;
+		grid-template-rows:95% auto;
+	}
+	#adds{
+		grid-area:adds;
+		border-top:1px solid var(--lightblue);
+		border-right:1px solid var(--lightblue);
+		border-left:1px solid var(--lightblue);
+	}
+}
+
+@media screen and (max-width:540px){
+	#header{
+		grid-template-columns:50% 50%;
+		grid-template-rows:100%;
+		border-bottom:1px solid var(--lightblue);
+	}
+	#header_nav{
+		display:none;
+	}
+	#dropdown_menu{
+		display:block;
+	}
+}

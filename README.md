@@ -1,5 +1,5 @@
 # codo_a_codo
 
-Programa "Codo a Codo". Buenos Aires, Argentina.-
 
-Todos los proyectos realizados en el mismo.
+
+Todos los proyectos realizados en el programa de "Codo a Codo". Buenos Aires, Argentina.-.
