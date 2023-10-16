@@ -1,14 +1,14 @@
-const btn = document.querySelector('button'); 
+var btn = document.querySelector('button');
 
-function random(number) {
-  return Math.floor(Math.random() * (number+1));
+random = number => Math.floor(Math.random() * (number+1));
+
+function randomColor(){
+	var randomC = 'rgb('+random(255)+','+random(255)+','+random(255)+')';
+	document.body.style.backgroundColor = randomC;
 }
 
-function changeColor() {
-  const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')'; 
-  document.body.style.backgroundColor = rndCol;
+function changeColor(){
+	setInterval(randomColor, 1000);
 }
 
-btn.onclick = function() {
-  setInterval(changeColor, 1000); // Cambia el color cada 1 segundo
-}
+btn.addEventListener('click', changeColor);
