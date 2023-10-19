@@ -1,13 +1,6 @@
-var btn = document.querySelector('button');
+const h1 = document.getElementById = "h1";
+console.log(h1.innerText);
+const nodo = document.body;
 
-random = number => Math.floor(Math.random() * (number+1));
-
-function randomColor(){
-	document.body.style.backgroundColor = 'rgb('+random(255)+','+random(255)+','+random(255)+')';
-}
-
-function changeColor(){
-	setInterval(randomColor, 1000);
-}
-
-btn.addEventListener('click', changeColor);
+nodo.style.color= "white";
+nodo.style.backgroundColor = "black";
