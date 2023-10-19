@@ -1,3 +1,15 @@
+
+/*HEADER*/
+button.btn-success{
+	background-color: rgb(151,201,61)!important;
+	border-color:rgb(151,201,61)!important;
+}
+a.text-success {
+	color: rgb(151,201,61)!important;
+}
+/*HEADER*/
+
+/*BODY*/
 main .seccion1{
 	background-image: url(../../img/ba1.jpg);
 	background-position:center;
@@ -36,6 +48,11 @@ u{
 	background-color:rgb(31,82,113);
 }
 
+/*BODY*/
+
+
+/*FOOTER*/
 .footer_a{
 	text-decoration:none;
 }
+/*FOOTER*/
