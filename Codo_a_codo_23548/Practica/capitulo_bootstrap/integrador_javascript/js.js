@@ -32,14 +32,29 @@ window.onload = function(){
 				})
 			}
 			})
-	}
+			var resumenButton = document.querySelector('button[name="Resumen"]');
+			resumenButton.addEventListener('click', function(event) {
+				var cantidad = document.getElementById('inputCantidad').value;
+				var categoria = document.querySelector('select').value;
+				var precioTicket = 120;
+				var descuento;
 
-	/*
-	index.html
-	-primer link blanco
-	-resto de links negro
-	-hover al resto de links
-	-onclick en el resto de linnks
-	*/
+				switch(categoria) {
+					case '1': // Estudiante
+						descuento = 0.8;
+						break;
+					case '2': // Trainee
+						descuento = 0.5;
+						break;
+					case '3': // Junior
+						descuento = 0.15;
+						break;
+					default:
+						descuento = 0;
+				}
+				var totalPagar = cantidad * precioTicket * (1 - descuento);
+				document.querySelector('.alert').textContent = 'Total a pagar $' + Math.trunc(totalPagar);
+			});
 
-}
+	};
+};
