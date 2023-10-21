@@ -1,9 +1,11 @@
 window.onload = function(){
 	var links = document.querySelectorAll(".navbar-nav .nav-link"); // Selecciona todos los links
 	var url = window.location.href; // Obtiene la URL de la página actual
+	console.log(url);
 
-	if (url.endsWith("index.html") || 
-		url.endsWith("index.html#")){
+	if (url.endsWith("https://meek-swan-b3bbf2.netlify.app/") || 
+		url.endsWith("https://meek-swan-b3bbf2.netlify.app/#")){
+		console.log("main page")
 		links.forEach(function(link, index){
 			if (index == 0) links[index].style.color = "white";
 			else {
@@ -18,8 +20,9 @@ window.onload = function(){
 		})
 		
 	}
-	else if(url.includes("conviertete_en_orador.html") ||
-		url.includes("conviertete_en_orador.html#")){
+	else if(url.endsWith("conviertete_en_orador") ||
+		url.endsWith("conviertete_en_orador#")){
+			console.log("secondary page")
 			links.forEach(function(link, index){
 			if (index == 3) links[index].style.color = "white";
 			else {
