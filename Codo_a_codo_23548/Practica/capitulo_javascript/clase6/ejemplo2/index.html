@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        <!-- Define el título de la página -->
         <title>Page Title</title>
+        <!-- Define la codificación de caracteres para la página -->
         <meta charset="UTF-8">
+        <!-- Hace que la página sea responsive -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Enlaza a una hoja de estilos externa -->
 		<link rel="stylesheet" href="estilo.css">
+		<!-- Enlaza a la hoja de estilos de Bootstrap -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     </head>
     <body class="text-center">
 		<div class="container text-center">
+			<!-- Título de la página -->
 			<h1>Generar clase dinámica</h1>
+			<!-- Campos de entrada para el nombre y la edad -->
 			<input id="nombre" type="text" placeholder="Nombre">
 			<input id="edad" type="text" placeholder="Edad">
+			<!-- Botón para cargar el contenido -->
 			<button class="btn btn-primary" id="boton">Cargar contenido</button>
+			<!-- Tabla para mostrar los datos cargados -->
 			<table class="table m-3">
 				<thead class="bg-dark text-light">
 					<tr>
@@ -26,16 +35,13 @@
 			</table>
 		</div>
 		
-		<!-- Javascript local code -->
+		<!-- Enlaza a un archivo JavaScript local -->
 		<script src="js.js"></script>
 		
-		<!-- JS de jQuery (necesario para los plugins de JavaScript de Bootstrap) -->
+		<!-- Enlaza a las bibliotecas de JavaScript necesarias para Bootstrap -->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-		<!-- JS de Popper.js (necesario para los tooltips y popovers de Bootstrap) -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
-		<!-- JS de Bootstrap -->
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </body>
 </html>
