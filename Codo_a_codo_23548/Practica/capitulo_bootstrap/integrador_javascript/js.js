@@ -20,20 +20,19 @@ window.onload = function(){
 		})
 		
 	}
-	else if(url.endsWith("conviertete_en_orador") ||
-		url.endsWith("conviertete_en_orador#")){
+	else if(url.endsWith("comprar_tickets") ||
+		url.endsWith("comprar_tickets#")){
 			console.log("secondary page")
 			links.forEach(function(link, index){
-			if (index == 3) links[index].style.color = "white";
-			else {
-				links[index].style.color = "rgb(30,30,30)";
-				links[index].addEventListener("mouseover", function(event){
-					event.target.style.color ="rgb(200,200,200)";
-				})
-				links[index].addEventListener("mouseout", function(event){
-					event.target.style.color ="rgb(30,30,30)";
-				})
-			}
+				if (index != 4){
+					links[index].style.color = "rgb(30,30,30)";
+					links[index].addEventListener("mouseover", function(event){
+						event.target.style.color ="rgb(200,200,200)";
+					})
+					links[index].addEventListener("mouseout", function(event){
+						event.target.style.color ="rgb(30,30,30)";
+					})
+				}
 			})
 			var resumenButton = document.querySelector('button[name="Resumen"]');
 			resumenButton.addEventListener('click', function(event) {
