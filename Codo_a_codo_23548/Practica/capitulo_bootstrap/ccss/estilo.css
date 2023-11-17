@@ -1,5 +1,17 @@
-main .seccion1{
-	background-image: url(../../img/ba1.jpg);
+
+/*HEADER*/
+button.btn-success{
+	background-color: rgb(151,201,61)!important;
+	border-color:rgb(151,201,61)!important;
+}
+a.text-success {
+	color: rgb(151,201,61)!important;
+}
+/*HEADER*/
+
+/*BODY*/
+main .p1_seccion1{
+	background-image: url(https://images3.alphacoders.com/109/1095798.jpg);
 	background-position:center;
 	background-size:cover;
 }
@@ -16,12 +28,8 @@ div.orador_info{
 
 img.orador_img {
 	width:100%;
-	height:280px;
-	padding:0 !important;
-	padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
-	margin:0!important;
 	border-radius:10px;
+	height:200px;
 }
 
 u{
@@ -36,6 +44,11 @@ u{
 	background-color:rgb(31,82,113);
 }
 
+/*BODY*/
+
+
+/*FOOTER*/
 .footer_a{
 	text-decoration:none;
 }
+/*FOOTER*/
